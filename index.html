@@ -45,67 +45,19 @@ title: Welcome
   </div>
 
   <div class="row">
-    <div
-      class="col-sm-4 d-flex justify-content-center"
-      style="transform: rotate(-5deg);"
-    >
-      <figure class="figure">
-        <img
-          class="figure-img img-fluid rounded-circle"
-          alt="Bootstrap Image Preview"
-          src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
-        />
-        <figcaption class="figure-caption">
-          <button
-            class="btn btn-lg btn-block btn-primary"
-            type="button"
-          >About</button>
-          <!-- <span class="badge badge-pill badge-primary">Primary</span> -->
-        </figcaption>
-      </figure>
-    </div>
+    {% assign btn_caption = 'About' %}
+    {% assign sub_url = 'about' %}
+    {% include home-showcase-element.html %}
 
-    <div
-      class="col-sm-4 d-flex justify-content-center"
-      style="transform: rotate(6deg); transform: translateY(50%); margin-bottom: 8rem"
-    >
-      <figure class="figure">
-        <img
-          class="figure-img img-fluid rounded-circle"
-          alt="Bootstrap Image Preview"
-          src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
-        />
-        <figcaption class="figure-caption">
-          <button
-            class="btn btn-lg btn-block btn-primary"
-            type="button"
-          >About</button>
-          <!-- <span class="badge badge-pill badge-primary">Primary</span> -->
-        </figcaption>
-      </figure>
-    </div>
+    {% assign btn_caption = 'Blog' %}
+    {% assign sub_url = 'blog' %}
 
-    <div
-      class="col-sm-4 d-flex justify-content-center"
-      style="transform: rotate(-5deg);"
-    >
-      <figure class="figure">
-        <img
-          class="figure-img img-fluid rounded-circle"
-          alt="Bootstrap Image Preview"
-          src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
-        />
-        <figcaption class="figure-caption">
-          <button
-            class="btn btn-lg btn-block btn-primary"
-            type="button"
-          >About</button>
-          <!-- <span class="badge badge-pill badge-primary">Primary</span> -->
-        </figcaption>
-      </figure>
-    </div>
+    {% include home-showcase-element.html %}
 
+    {% assign btn_caption = 'Photography' %}
+    {% assign sub_url = 'photography' %}
 
+    {% include home-showcase-element.html %}
     <!--     
     <div class="col-sm-4 d-flex justify-content-center">
       <img
