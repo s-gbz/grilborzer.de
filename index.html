@@ -3,7 +3,7 @@ layout: default
 title: Welcome
 ---
 
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <h1 class="col-12 col-sm-6 animate__animated animate__backInDown">
       Hi there!
@@ -15,198 +15,112 @@ title: Welcome
     />
 
     <h2 class="col-12 col-sm-6">Skills & services</h2>
-    
-      <ul class="col-12 row list-unstyled">
-        <li class="col-6">Skill 1</li>
-        <li class="col-6">Skill 2</li>
-        <li class="col-6">Skill 3</li>
-        <li class="col-6">Skill 4</li>
-      </ul>
 
+    <ul class="col-12 row list-unstyled">
+      <li class="col-6">Skill 1</li>
+      <li class="col-6">Skill 2</li>
+      <li class="col-6">Skill 3</li>
+      <li class="col-6">Skill 4</li>
+    </ul>
+  </div>
+</div> -->
 
-    <!-- Carousel pls -->
-    <h3 class="col-12 col-sm-12 animate__animated animate__backInDown">
-      Latest articles
-    </h3>
-
-    <div id="carouselExampleIndicators" class="carousel slide col-12 col-sm-12" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="/assets/images/the-lodge-smaller.jpg" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="/assets/images/the-lodge-smaller.jpg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="/assets/images/the-lodge-smaller.jpg" alt="Third slide">
-        </div>
+<div class="container-fluid my-5">
+  <div class="jumbotron bg-white">
+    <div class="media">
+      <div class="media-body">
+        <h1 class="display-4">Hi there!</h1>
+        <p class="lead">My name is Sergej. I like to build software, write text & be creative. Welcome to my personal
+          corner
+          of the internet.</p>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
 
-    <!-- Carousel pls -->
-    <h3 class="col-12 col-sm-12 animate__animated animate__backInDown">
-      Some photos I took
-    </h3>
-    <div class="col-12 col-sm-12">
-      <img src="/portfolio-assets/portfolio-photos/thumbnails/0.jpg" />
-      <img src="/portfolio-assets/portfolio-photos/thumbnails/20.jpg" />
-      <img src="/portfolio-assets/portfolio-photos/thumbnails/25.jpg" />
+      <img
+        class="pl-3 img-fluid rounded-circle"
+        src="{{site.baseurl}}/assets/images/s-gbz.jpg"
+        style="max-width: 50%;"
+      >
+      <hr class="my-4">
     </div>
   </div>
-</div>
 
-<style>
-  :root {
-    --animate-duration: 1s;
-    --animate-delay: 1s;
-    --animate-repeat: 1;
-  }
-  .animate__animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-duration: var(--animate-duration);
-    animation-duration: var(--animate-duration);
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
+  <div class="row">
+    <div
+      class="col-sm-4 d-flex justify-content-center"
+      style="transform: rotate(-5deg);"
+    >
+      <figure class="figure">
+        <img
+          class="figure-img img-fluid rounded-circle"
+          alt="Bootstrap Image Preview"
+          src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
+        />
+        <figcaption class="figure-caption">
+          <button
+            class="btn btn-lg btn-block btn-primary"
+            type="button"
+          >About</button>
+          <!-- <span class="badge badge-pill badge-primary">Primary</span> -->
+        </figcaption>
+      </figure>
+    </div>
 
-  .animate__backInRight {
-    -webkit-animation-name: backInRight;
-    animation-name: backInRight;
-  }
+    <div
+      class="col-sm-4 d-flex justify-content-center"
+      style="transform: rotate(6deg); transform: translateY(50%); margin-bottom: 8rem"
+    >
+      <figure class="figure">
+        <img
+          class="figure-img img-fluid rounded-circle"
+          alt="Bootstrap Image Preview"
+          src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
+        />
+        <figcaption class="figure-caption">
+          <button
+            class="btn btn-lg btn-block btn-primary"
+            type="button"
+          >About</button>
+          <!-- <span class="badge badge-pill badge-primary">Primary</span> -->
+        </figcaption>
+      </figure>
+    </div>
 
-  @-webkit-keyframes backInRight {
-    0% {
-      -webkit-transform: translateX(2000px) scale(0.7);
-      transform: translateX(2000px) scale(0.7);
-      opacity: 0.7;
-    }
+    <div
+      class="col-sm-4 d-flex justify-content-center"
+      style="transform: rotate(-5deg);"
+    >
+      <figure class="figure">
+        <img
+          class="figure-img img-fluid rounded-circle"
+          alt="Bootstrap Image Preview"
+          src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
+        />
+        <figcaption class="figure-caption">
+          <button
+            class="btn btn-lg btn-block btn-primary"
+            type="button"
+          >About</button>
+          <!-- <span class="badge badge-pill badge-primary">Primary</span> -->
+        </figcaption>
+      </figure>
+    </div>
 
-    80% {
-      -webkit-transform: translateX(0px) scale(0.7);
-      transform: translateX(0px) scale(0.7);
-      opacity: 0.7;
-    }
 
-    100% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  @keyframes backInRight {
-    0% {
-      -webkit-transform: translateX(2000px) scale(0.7);
-      transform: translateX(2000px) scale(0.7);
-      opacity: 0.7;
-    }
-
-    80% {
-      -webkit-transform: translateX(0px) scale(0.7);
-      transform: translateX(0px) scale(0.7);
-      opacity: 0.7;
-    }
-
-    100% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-
-  @-webkit-keyframes pulse {
-    from {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-    }
-
-    50% {
-      -webkit-transform: scale3d(1.05, 1.05, 1.05);
-      transform: scale3d(1.05, 1.05, 1.05);
-    }
-
-    to {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-    }
-  }
-  @keyframes pulse {
-    from {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-    }
-
-    50% {
-      -webkit-transform: scale3d(1.05, 1.05, 1.05);
-      transform: scale3d(1.05, 1.05, 1.05);
-    }
-
-    to {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-    }
-  }
-
-  @-webkit-keyframes backInDown {
-    0% {
-      -webkit-transform: translateY(-1200px) scale(0.7);
-      transform: translateY(-1200px) scale(0.7);
-      opacity: 0.7;
-    }
-
-    80% {
-      -webkit-transform: translateY(0px) scale(0.7);
-      transform: translateY(0px) scale(0.7);
-      opacity: 0.7;
-    }
-
-    100% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  @keyframes backInDown {
-    0% {
-      -webkit-transform: translateY(-1200px) scale(0.7);
-      transform: translateY(-1200px) scale(0.7);
-      opacity: 0.7;
-    }
-
-    80% {
-      -webkit-transform: translateY(0px) scale(0.7);
-      transform: translateY(0px) scale(0.7);
-      opacity: 0.7;
-    }
-
-    100% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  .animate__backInDown {
-    -webkit-animation-name: backInDown;
-    animation-name: backInDown;
-  }
-
-  .animate__pulse {
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-  }
-</style>
+    <!--     
+    <div class="col-sm-4 d-flex justify-content-center">
+      <img
+        class="rounded-circle"
+        class="rounded-circle"
+        alt="Bootstrap Image Preview"
+        src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
+      />
+    </div>
+    <div class="col-sm-4 d-flex justify-content-center">
+      <img
+        class="rounded-circle"
+        alt="Bootstrap Image Preview"
+        src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
+      />
+    </div>
+  </div> -->
+  </div>
