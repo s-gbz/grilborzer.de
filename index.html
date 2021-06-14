@@ -3,28 +3,6 @@ layout: default
 title: Welcome
 ---
 
-<!-- <div class="container">
-  <div class="row">
-    <h1 class="col-12 col-sm-6 animate__animated animate__backInDown">
-      Hi there!
-    </h1>
-
-    <img
-      class="col-12 col-sm-6 animate__animated animate__backInRight"
-      src="{{site.baseurl}}/assets/images/s-gbz.jpg"
-    />
-
-    <h2 class="col-12 col-sm-6">Skills & services</h2>
-
-    <ul class="col-12 row list-unstyled">
-      <li class="col-6">Skill 1</li>
-      <li class="col-6">Skill 2</li>
-      <li class="col-6">Skill 3</li>
-      <li class="col-6">Skill 4</li>
-    </ul>
-  </div>
-</div> -->
-
 <div class="container-fluid my-5">
   <div class="jumbotron bg-white">
     <div class="media">
@@ -44,10 +22,25 @@ title: Welcome
     </div>
   </div>
 
-  <div class="row">
-    {% include home-showcase-element.html btn_caption = 'About' sub_url = 'about' tilt_angle = 'transform: rotate(-5deg);' %}
-
-    {% include home-showcase-element.html btn_caption = 'Blog' sub_url = 'blog' tilt_angle = 'transform: translateY(-25%);' %}
-
-    {% include home-showcase-element.html btn_caption = 'Photography' sub_url = 'photography' tilt_angle = 'transform: rotate(15deg);' %}
+  <div class="row justify-content-center">
+    <div class="col-4">
+      {% include home-showcase-element.html btn_caption = 'About' sub_url = 'about' tilt_angle = 'transform:
+      rotate(-5deg);' %}
+    </div>
   </div>
+
+  <div class="row justify-content-start">
+    <div class="col-4">
+      {% include home-showcase-element.html btn_caption = 'Blog' sub_url = 'blog' tilt_angle = 'transform:
+      translateY(-25%);' %}
+    </div>
+
+    <div class="col-4"></div>
+
+    <div class="col-4">
+      {% include home-showcase-element.html btn_caption = 'Photography' sub_url = 'photography' tilt_angle =
+      'transform:
+      rotate(15deg);' %}
+    </div>
+  </div>
+</div>
