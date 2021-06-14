@@ -45,34 +45,9 @@ title: Welcome
   </div>
 
   <div class="row">
-    {% assign btn_caption = 'About' %}
-    {% assign sub_url = 'about' %}
-    {% include home-showcase-element.html %}
+    {% include home-showcase-element.html btn_caption = 'About' sub_url = 'about' tilt_angle = 'transform: rotate(-5deg);' %}
 
-    {% assign btn_caption = 'Blog' %}
-    {% assign sub_url = 'blog' %}
+    {% include home-showcase-element.html btn_caption = 'Blog' sub_url = 'blog' tilt_angle = 'transform: translateY(-25%);' %}
 
-    {% include home-showcase-element.html %}
-
-    {% assign btn_caption = 'Photography' %}
-    {% assign sub_url = 'photography' %}
-
-    {% include home-showcase-element.html %}
-    <!--     
-    <div class="col-sm-4 d-flex justify-content-center">
-      <img
-        class="rounded-circle"
-        class="rounded-circle"
-        alt="Bootstrap Image Preview"
-        src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
-      />
-    </div>
-    <div class="col-sm-4 d-flex justify-content-center">
-      <img
-        class="rounded-circle"
-        alt="Bootstrap Image Preview"
-        src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
-      />
-    </div>
-  </div> -->
+    {% include home-showcase-element.html btn_caption = 'Photography' sub_url = 'photography' tilt_angle = 'transform: rotate(15deg);' %}
   </div>
