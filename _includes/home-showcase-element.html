@@ -1,0 +1,37 @@
+<div
+    class="d-flex justify-content-center"
+    style="{{ include.tilt_angle }}"
+>
+    <figure class="figure">
+        {% if include.btn_caption == "About" %}
+        <img
+            class="figure-img img-fluid rounded-circle"
+            src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/microsoft/209/waving-hand-sign_1f44b.png"
+        />
+        {% endif %}
+
+        {% if include.btn_caption == "Photography" %}
+        <img
+            class="figure-img img-fluid rounded-circle"
+            src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/microsoft/209/camera-with-flash_1f4f8.png"
+        />
+        {% endif %}
+
+        {% if include.btn_caption == "Blog" %}
+        <img
+            class="figure-img img-fluid rounded-circle"
+            src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/microsoft/209/memo_1f4dd.png"
+        />
+        {% endif %}
+
+        <figcaption class="figure-caption">
+            <a
+                class="btn btn-lg btn-block btn-primary"
+                type="button"
+                href="/{{ include.sub_url }}"
+            >{{ include.btn_caption }}
+        </a>
+            <!-- <span class="badge badge-pill badge-primary">Primary</span> -->
+        </figcaption>
+    </figure>
+</div>

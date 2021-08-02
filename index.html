@@ -1,106 +1,70 @@
 ---
-title: Portfolio
-comments: false
-layout: gallery
+layout: home
+title: Welcome
 ---
 
-<noscript>
-    <h2 style="color: red; margin-top: 40px; position: relative; text-align: center; text-shadow: 1px 1px #fafafa;">
-        <b><i>Please enable JavaScript to display the gallery.</i></b>
-    </h2>
-</noscript>
+<div class="site-content-home d-flex flex-column">
+  <div class="container align-self-center">
+    <div class="main-content">
 
-<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-    <div class="slides"></div>
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-</div>
+      <div
+        class="container-fluid justify-content-center row mt-0"
+        style="display: grid;"
+      >
+        <!-- Start of jumbotron -->
+        <div
+          class="flex-column-reverse jumbotron bg-white"
+          style="display: flex;"
+        >
+          <div class="media-body align-self-center">
+            <br>
+            <br>
+            <h1 class="display-4">Hi there!</h1>
+            <p class="lead">My name is <b>Sergej Grilborzer</b>.
+              <br>
+              I like to <a href="https://codeklasse.de/" target="_blank">build software</a>, <a href="/blog">write</a> & be <a href="/photography">creative</a>.
+            </p>
+            <br>
+            <br>
+            <h2 class="display-5">Let's get in touch</h2>
+            <p class="lead">You can say hello via any of these channels.</p>
+            <br>
+            <div class="container ml-0">
+              <div class="row">
+                <a class="col link-dark" href="mailto:sergej@grilborzer.de" target="_blank">
+                  <i class="fas fa-envelope fa-2x"></i>
+                </a>
+                <a class="col link-dark" href="https://www.linkedin.com/in/sergej-grilborzer-b28736205/" target="_blank">
+                  <i class="fab fa-linkedin-in fa-2x"></i>
+                </a>
+                <a class="col link-dark" href="https://github.com/s-gbz" target="_blank">
+                  <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a class="col link-dark" href="https://twitter.com/s_gbz" target="_blank">
+                  <i class="fab fa-twitter fa-2x"></i>
+                </a>
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+          </div>
 
-<div id="masonryGrid">
-    <div v-for="(start, index) in numberOfPhotos" :key="index">
-        <a :href="basePathFulls + index + '.webp'">
+          <img
+            class=" img-fluid align-self-center rounded-circle"
+            src="{{site.baseurl}}/assets/images/s-gbz-2.jpg"
+            style="min-width: 15%; max-width: 15rem"
+          >
+        </div>
+        <!-- End of jumbotron -->
+      </div>
 
-            <picture @click="setCurrentIndex(index)">
-                <source loading="lazy" :srcset="basePathThumbnails + index + '.webp'" type="image/webp">
-                <img loading="lazy" alt="Model Portrait Photography" :src="basePathThumbnails + index + '.jpg'"
-                    type="image/jpg">
-            </picture>
-        </a>
     </div>
+  </div>
+
+  {% include footer.html %}
 </div>
-
-<script src="portfolio-assets/vue.min.js"></script>
-<script src="portfolio-assets/macy.js"></script>
-<link rel="stylesheet" href="portfolio-assets/dependencies/blueimp-gallery.min.css" />
-<script src="portfolio-assets/dependencies/blueimp-gallery.min.js"></script>
-
-<script>
-    let currentIndex = 0;
-    const numberOfPhotos = 46;
-    const basePathThumbnails = "portfolio-assets/portfolio-photos/thumbnails/";
-    const basePathTinyThumbnails = "portfolio-assets/portfolio-photos/tiny-thumbnails/";
-    const basePathFulls = "portfolio-assets/portfolio-photos/fulls/";
-    const masonryContainer = "#masonryGrid";
-
-    const vueInstance = new Vue({
-        delimiters: ["((", "))"],
-        el: masonryContainer,
-        data: {
-            numberOfPhotos: numberOfPhotos,
-            basePathThumbnails: basePathThumbnails,
-            basePathFulls: basePathFulls
-        },
-        methods: {
-            setCurrentIndex(index) {
-                currentIndex = index;
-            }
-        }
-    });
-
-    const macyInstance = Macy({
-        container: masonryContainer,
-        mobileFirst: true,
-        margin: 24,
-        columns: 4,
-        breakAt: {
-            950: 4,
-            520: 3,
-            400: 2
-        }
-    });
-
-    // runs everytime a pictures is loaded
-    macyInstance.runOnImageLoad(function () {
-        macyInstance.recalculate(true, true);
-    }, true);
-
-
-    document.getElementById('masonryGrid').onclick = function (event) {
-        event = event || window.event;
-        const target = event.target || event.srcElement;
-        const options = {
-            index: currentIndex, event: event, preloadRange: 0
-        };
-        const links = useWebpImagesInGalleryIfSupported(target);
-
-        blueimp.Gallery(links, options);
-    }
-
-    function useWebpImagesInGalleryIfSupported(target) {
-        let links = [];
-
-        if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-            for (let i = 0; i < numberOfPhotos; i++) {
-                links.push({ href: basePathFulls + i + ".jpg", thumbnail: basePathTinyThumbnails + i + ".gif" });
-            }
-        } else {
-            for (let i = 0; i < numberOfPhotos; i++) {
-                links.push({ href: basePathFulls + i + ".webp", thumbnail: basePathTinyThumbnails + i + ".gif" });
-            }
-        }
-
-        return links;
-    }
-</script>
