@@ -87,6 +87,10 @@ pre {
     transition: all 0.4s;
 }
 
+.site-content-home {
+    transition: all 0.4s;
+}
+
 section {
     margin-bottom: 20px;
 }
@@ -355,6 +359,11 @@ span.post-read-more a:hover {
     margin-bottom: 5px;
     position: relative;
     background: #fff;
+
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .link-dark {

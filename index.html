@@ -1,46 +1,71 @@
 ---
-layout: default
+layout: home
 title: Welcome
 ---
 
-<div class="container-fluid my-5">
-  <div class="jumbotron bg-white">
-    <div class="media">
-      <div class="media-body">
-        <h1 class="display-4">Hi there!</h1>
-        <p class="lead">My name is Sergej. I like to build software, write text & be creative. Welcome to my personal
-          corner
-          of the internet.</p>
+<div class="site-content-home d-flex flex-column">
+  <div class="container align-self-center">
+    <div class="main-content">
+
+      <div
+        class="container-fluid justify-content-center row mt-0"
+        style="display: grid;"
+      >
+        <!-- Start of jumbotron -->
+        <div
+          class="flex-column-reverse jumbotron bg-white"
+          style="display: flex;"
+        >
+          <div class="media-body align-self-center">
+            <br>
+            <br>
+            <h1 class="display-4">Hi there!</h1>
+            <p class="lead">My name is <b>Sergej Grilborzer</b>.
+              <br>
+              I like to build software, <a href="/blog">write</a> & be <a href="/photography">creative</a>.
+            </p>
+            <br>
+            <br>
+            <h2 class="display-5">Let's get in touch</h2>
+            <p class="lead">My name is <b>Sergej Grilborzer</b>.
+            </p>
+            <br>
+            <div class="container">
+              <div class="row">
+                <a class="col link-dark" href="mailto:sergej@grilborzer.de" target="_blank">
+                  <i class="fas fa-envelope fa-2x"></i>
+                </a>
+                <a class="col link-dark" href="https://www.linkedin.com/in/sergej-grilborzer-b28736205/" target="_blank">
+                  <i class="fab fa-linkedin-in fa-2x"></i>
+                </a>
+                <a class="col link-dark" href="https://github.com/s-gbz" target="_blank">
+                  <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a class="col link-dark" href="https://twitter.com/s_gbz" target="_blank">
+                  <i class="fab fa-twitter fa-2x"></i>
+                </a>
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+          </div>
+
+          <img
+            class=" img-fluid align-self-center rounded-circle"
+            src="{{site.baseurl}}/assets/images/s-gbz-2.jpg"
+            style="min-width: 15%; max-width: 25%"
+          >
+        </div>
+        <!-- End of jumbotron -->
       </div>
 
-      <img
-        class="pl-3 img-fluid rounded-circle"
-        src="{{site.baseurl}}/assets/images/s-gbz.jpg"
-        style="max-width: 50%;"
-      >
-      <hr class="my-4">
     </div>
   </div>
 
-  <div class="row justify-content-center">
-    <div class="col-4">
-      {% include home-showcase-element.html btn_caption = 'About' sub_url = 'about' tilt_angle = 'transform:
-      rotate(-5deg);' %}
-    </div>
-  </div>
-
-  <div class="row justify-content-start">
-    <div class="col-4">
-      {% include home-showcase-element.html btn_caption = 'Blog' sub_url = 'blog' tilt_angle = 'transform:
-      translateY(-25%);' %}
-    </div>
-
-    <div class="col-4"></div>
-
-    <div class="col-4">
-      {% include home-showcase-element.html btn_caption = 'Photography' sub_url = 'photography' tilt_angle =
-      'transform:
-      rotate(15deg);' %}
-    </div>
-  </div>
+  {% include footer.html %}
 </div>
