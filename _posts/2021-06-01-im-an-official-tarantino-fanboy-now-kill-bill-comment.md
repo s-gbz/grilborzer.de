@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title:  "I'm an official Tarantino fanboy now (Kill Bill comment)"
 author: sergej
 categories: [Movie Review]
