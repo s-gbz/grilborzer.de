@@ -6,10 +6,12 @@ categories: [Movie Review]
 image: assets/images/red-sparrow.jpg
 image_caption: "Photo Credit: <a href='https://www.imdb.com/title/tt2873282/mediaviewer/rm1560564224/' target='_blank'>IMDb</a>"
 toc: true
-rating: 3
 comments: true
 featured: false
 hidden: false
+
+rating: 3
+spoiler: false
 ---
 
 So, the movie was finally published on german Netflix.
