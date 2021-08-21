@@ -22,12 +22,21 @@
                         <div class="card-body">
                             <h2 class="card-title">
                                 <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                            </h2>
+
+                            <div class="d-flex mt-1 mb-2">
                                 {% if post.rating %}
-                                <div class="mb-2 mt-2 font-weight-normal">
-                                {% include star_rating_postbox.html %}
+                                <div class="font-weight-normal">
+                                    {% include star_rating_postbox.html %}
                                 </div>
                                 {% endif %}
-                            </h2>
+                
+                                {% if post.spoiler == true %}
+                                <span class="badge badge-warning h-100 ml-2">Spoiler alert</span>
+                                {% elsif post.spoiler == false %}
+                                <span class="badge badge-info h-100 ml-2">No spoilers</span>
+                                {% endif %}
+                            </div>
 
                             <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:25 }}</h4>
                         </div>
