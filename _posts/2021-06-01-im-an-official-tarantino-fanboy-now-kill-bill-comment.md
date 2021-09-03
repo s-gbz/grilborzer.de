@@ -1,15 +1,17 @@
 ---
-layout: post
+layout: blog
 title:  "I'm an official Tarantino fanboy now (Kill Bill comment)"
 author: sergej
 categories: [Movie Review]
 image: assets/images/kill-bill/kill-bill-1.jpg
 image_caption: "Photo Credit: <a href='https://www.imdb.com/title/tt6019206/mediaviewer/rm1617744129' target='_blank'>IMDb</a>"
 toc: false
-rating: 5
 comments: true
 featured: false
 hidden: false
+
+rating: 5
+spoiler: false
 ---
 
 I've just finished Kill Bill Vol. 2.

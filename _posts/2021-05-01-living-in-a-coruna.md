@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title:  "Digital Nomadism - Moving to A Coruña"
 author: sergej
 categories: [Travel]

@@ -2,49 +2,110 @@
 {% assign author = site.authors[post.author] %}
 
 <div class="col-lg-4 col-md-6 mb-30px card-group">
-    <div class="card h-100" onclick="window.location='{{ post.url }}';" style="cursor: pointer;">
+    <div
+        class="card h-100"
+        onclick="window.location='{{ post.url }}';"
+        style="cursor: pointer;"
+    >
         <div class="maxthumb">
             <a href="{{ site.baseurl }}{{ post.url }}">
                 {% if post.image %}
 
-                    {% if site.lazyimages == "enabled" %}
-                        <img class="img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}" alt="{{ post.title }}">
-                    {% else %}
-                        <img class="img-fluid" src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}" alt="{{ post.title }}"> 
-                    {% endif %}
+                {% if site.lazyimages == "enabled" %}
+                <img
+                    class="img-fluid lazyimg"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII="
+                    data-src="{% if post.image contains "
+                    ://"
+                    %}{{
+                    post.image
+                    }}{%
+                    else
+                    %}{{
+                    site.baseurl
+                    }}/{{
+                    post.image
+                    }}{%
+                    endif
+                    %}"
+                    alt="{{ post.title }}"
+                >
+                {% else %}
+                <img
+                    class="img-fluid"
+                    src="{% if post.image contains "
+                    ://"
+                    %}{{
+                    post.image
+                    }}{%
+                    else
+                    %}{{
+                    site.baseurl
+                    }}/{{
+                    post.image
+                    }}{%
+                    endif
+                    %}"
+                    alt="{{ post.title }}"
+                >
+                {% endif %}
 
                 {% endif %}
             </a>
         </div>
-        
+
         <div class="card-body">
-            
+
             <h2 class="card-title">
-                <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                <a
+                    class="text-dark"
+                    href="{{ site.baseurl }}{{ post.url }}"
+                >{{ post.title }}</a>
+            </h2>
+
+            <div class="d-flex mt-1 mb-2">
                 {% if post.rating %}
-                <div class="mb-2 mt-2 font-weight-normal">
-                {% include star_rating_postbox.html %}
+                <div class="font-weight-normal">
+                    {% include star_rating_postbox.html %}
                 </div>
                 {% endif %}
-            </h2>
+
+                {% if post.spoiler == true %}
+                <span class="badge badge-warning h-100 ml-2">Spoiler alert</span>
+                {% elsif post.spoiler == false %}
+                <span class="badge badge-info h-100 ml-2">No spoilers</span>
+                {% endif %}
+            </div>
+
             <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4>
-            
+
         </div>
-        
+
         <div class="card-footer bg-white">
             <div class="wrapfooter">
                 {% if post.author %}
                 <span class="meta-footer-thumb">
-                {% if author.avatar %}
-                <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
-                {% else %}
-                <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
-                {% endif %}
+                    {% if author.avatar %}
+                    <img
+                        class="author-thumb"
+                        src="{{site.baseurl}}/{{ author.avatar }}"
+                        alt="{{ author.display_name }}"
+                    >
+                    {% else %}
+                    <img
+                        class="author-thumb"
+                        src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x"
+                        alt="{{ author.display_name }}"
+                    >
+                    {% endif %}
                 </span>
                 <span class="author-meta">
-                <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span><br/>
-                {% endif %}
-                <span class="post-date">{{ post.date | date_to_string }}</span>
+                    <span class="post-name"><a
+                            target="_blank"
+                            href="{{ author.web }}"
+                        >{{ author.display_name }}</a></span><br />
+                    {% endif %}
+                    <span class="post-date">{{ post.date | date_to_string }}</span>
                 </span>
 
             </div>
