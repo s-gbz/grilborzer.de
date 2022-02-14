@@ -62,9 +62,8 @@ comments: false
 
 <script>
     let currentIndex = 0;
-    const numberOfPhotos = 46;
+    const numberOfPhotos = 22;
     const basePathThumbnails = "{{site.baseurl}}/portfolio-assets/portfolio-photos/thumbnails/";
-    const basePathTinyThumbnails = "{{site.baseurl}}/portfolio-assets/portfolio-photos/tiny-thumbnails/";
     const basePathFulls = "{{site.baseurl}}/portfolio-assets/portfolio-photos/fulls/";
     const masonryContainer = "#masonryGrid";
 
@@ -117,11 +116,11 @@ comments: false
 
         if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
             for (let i = 0; i < numberOfPhotos; i++) {
-                links.push({ href: basePathFulls + i + ".jpg", thumbnail: basePathTinyThumbnails + i + ".gif" });
+                links.push({ href: basePathFulls + i + ".jpg" });
             }
         } else {
             for (let i = 0; i < numberOfPhotos; i++) {
-                links.push({ href: basePathFulls + i + ".webp", thumbnail: basePathTinyThumbnails + i + ".gif" });
+                links.push({ href: basePathFulls + i + ".webp" });
             }
         }
 
