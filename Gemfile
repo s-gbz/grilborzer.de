@@ -19,3 +19,6 @@ group :jekyll_plugins do
     gem 'rouge'
     gem 'jemoji'
 end
+
+ruby '3.0.2'
+gem "webrick", "~> 1.7"
