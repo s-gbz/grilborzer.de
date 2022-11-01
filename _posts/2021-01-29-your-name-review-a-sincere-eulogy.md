@@ -88,7 +88,7 @@ They definitely saw each other in passing trains.
 Of course, you would expect them to run towards each other and naturally miss themselves.
 My relief was beyond words when they actually did and the boy spoke up after walking by her and almost letting her go forever.
 
-<iframe src="https://www.youtube-nocookie.com/embed/jkWViZk1u40" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- <iframe src="https://www.youtube-nocookie.com/embed/jkWViZk1u40" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 [X] Restoring faith into good endings, love and the whole world in general.
 

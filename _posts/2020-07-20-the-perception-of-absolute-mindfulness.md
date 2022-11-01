@@ -17,7 +17,7 @@ Nevertheless, it might be just the reason why people practice meditation.
 Please enjoy my little journey into the depths of human consciousness.
 
 In case you haven't heard of mindfulness before:
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HmEo6RI4Wvs?start=23" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HmEo6RI4Wvs?start=23" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 <br>
 
 # How true mindfulness feels like

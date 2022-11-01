@@ -28,7 +28,7 @@ It's **funny** too!
 I wonder if the infamous "danger/ alarm/ triggered sound" has its origin here.
 The overpowered fight scenes are ridiculously **hilarious**.
 
-<iframe src="https://www.youtube-nocookie.com/embed/cOy6hqzfsAs" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- <iframe src="https://www.youtube-nocookie.com/embed/cOy6hqzfsAs" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 There's so much to cherish!
 What was a suspicion after watching "Reservoir Dogs" is a fact now:
@@ -44,6 +44,6 @@ It's so much fun to watch.
 DON'T WATCH in case you HAVE NOT SEEN THIS BEAUTIFUL MASTERPIECE.
 However, if you already did or simply like to live dangerously, enjoy these brilliant credit rolls to see what I'm talking about.
 
-<iframe src="https://www.youtube-nocookie.com/embed/nfJ9cv-ZB6s" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- <iframe src="https://www.youtube-nocookie.com/embed/nfJ9cv-ZB6s" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
-<iframe src="https://www.youtube-nocookie.com/embed/BcqLyO3c-7E" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- <iframe src="https://www.youtube-nocookie.com/embed/BcqLyO3c-7E" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
