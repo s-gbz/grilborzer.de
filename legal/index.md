@@ -1,6 +1,6 @@
 ---
 title: Legal Notice
-modified: 2019-12-25
+modified: 2023-06-07
 comments: false
 layout: page-with-title
 ---
@@ -9,7 +9,7 @@ layout: page-with-title
 
 Sergej Grilborzer
 
-Pirolstr. 5, 44867 Bochum
+Feldsieper Str. 79, 44809 Bochum
 
 Telefon: 01623292122
 
